@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>contact us:</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background-image: linear-gradient(rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+            }
+            .whatsapp-btn-container{
+                position: fixed;
+                left: 40px;
+                opacity: 0;
+                top: -50px;
+                padding: 30px;
+                animation: fade-up 2s forwards;
+                animation-delay: 1000ms;
+            }
+            @keyframes fade-up{
+                100%{
+                    top:20px;
+                    opacity: 1;
+
+                }
+            }
+            .whatsapp-btn-container .whatsapp-btn{
+                font-size: 48px;
+                color: #25d360;
+                display: inline;
+                transition: all 400ms;
+            }
+            .whatsapp-btn-container .whatsapp-btn:hover{
+                transform: scale(3.2);
+            }
+            .whatsapp-btn-container span{
+                position: absolute;
+                top: 0;
+                left: 4px;
+                font-family: 'Roboto' sans-serif;
+                font-weight: bold;
+                color: #075e45;
+                transform: rotateZ(20deg) translateX(10px);
+                opacity: 0;
+                transition: all 400ms;
+            }
+            .whatsapp-btn-container .whatsapp-btn:hover + span{
+                transform: rotateZ(0deg) translateX(0px);
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="whatsapp-btn-container">
+            <a class="whatsapp-btn" href="https://wa.me/254704957186"><i class="fab fa-whatsapp"></i></a>
+            <span>Contact us</span>
+        </div>
+
+
+    </body>
+    </html>
+   
